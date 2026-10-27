@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy this file to your project root as loop.config.json. Command-line options override these values.",
+  "_about_verify": "Put each task's own check on its line in TASKS.md ('| verify: ...'); checks of tasks already done are re-run automatically. 'verify' below runs after EVERY task: use it for what must always pass (build, lint). If you put the full test suite here, set stop-on-block to true, because a blocked task's failing tests would make every later task fail.",
+  "agent": "claude -p --permission-mode acceptEdits < {prompt_file}",
+  "verify": "",
+  "_verify_python_build": "python -m compileall -q .",
+  "_verify_java_maven": "mvn -q -DskipTests compile",
+  "_verify_java_gradle": "gradlew compileJava",
+  "_verify_dotnet": "dotnet build -warnaserror",
+  "rules": "",
+  "max-attempts": 3,
+  "agent-timeout": 1800,
+  "verify-timeout": 900,
+  "max-hours": 8,
+  "notify": "desktop",
+  "git": true,
+  "stop-on-block": false,
+  "no-regress": false,
+  "_about_agent_errors": "An agent call that fails without changing any file (quota, network, login) is not charged to the task. After max-agent-errors failures in a row the loop pauses; run it again to resume.",
+  "max-agent-errors": 3,
+  "agent-error-wait": 60
+}
