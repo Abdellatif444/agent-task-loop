@@ -84,7 +84,7 @@ Further results will be published here as measured, with the model, the agent an
 
 ## Pack (optional, paid)
 
-Everything above is free. A paid pack adds a practical guide (writing tasks an agent can finish, settings, Windows notes, reading the results, troubleshooting), the demo project with its reference solution, the script to measure your own agent on it, and the measured results with their method. Pack: not published yet.
+Everything above is free. A paid pack adds a practical guide (writing tasks an agent can finish, settings, Windows notes, reading the results, troubleshooting), the demo project with its reference solution, the script to measure your own agent on it, and the measured results with their method. Pack: https://hakayako.gumroad.com/l/ydssfj (9 USD, pay what you want).
 
 ## Credits and licence
 
